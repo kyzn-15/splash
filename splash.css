@@ -37,6 +37,17 @@ header h4{
     display: flex;
     justify-content: center;
     align-items: center;
+	animation: background-fadein 1s ease-out;
+}
+
+@keyframes background-fadein {
+	from {
+		opacity: 0;
+	  }
+	
+	  to {
+		opacity: 1;
+	  }
 }
 
 .logo-header{
@@ -44,7 +55,6 @@ header h4{
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: #D9DCD6;
 }
 
 .logo{
@@ -60,13 +70,13 @@ header h4{
 	bottom: 0;
 	opacity: 1;
 	scale: 1.1;
-	transition: ease-in-out 0.5s;
+	transition: ease-out 0.5s;
 }
 
 .logo.fade{
 	bottom: 0;
 	opacity: 0;
-	transition: ease-in-out 0.5s;
+	transition: ease-in 0.5s;
 }
 
 @media screen and (max-width : 740px){
